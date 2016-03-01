@@ -1,27 +1,47 @@
-
-p{
-
-}
-
-.f{
-	background-color: yellow;
-	width: 200px;
-	height: 200px;
-	margin: auto;
-	 
-}
-#f5{
-	
-	transform: translateY(-600px) translateX(200px) rotateY(-70deg);
-	transform-origin: left;
-	background-color: red;
-
-	
-}
-#f6{
-	transform: translateY(-800px) translateX(-200px) rotateY(70deg);
-	transform-origin: right;
-	background-color: red;
-
-
-}
+ #p{
+            position: absolute;
+            top:50px;
+            left: 40%;
+            perspective: 1300px ;
+            transform-style: preserve-3d;
+        }
+        #p:hover{
+            transform: rotate3d(1,1,0,360deg);
+            transition: transform 3s;
+        }
+        .face{
+            
+            
+            position: relative;
+            width: 200px;
+            height: 200px;
+            
+           
+        }
+        #f1{
+            transform-origin: bottom;
+            background-color: blue;
+            transform: rotateX(-90deg);
+        }
+        
+        #f5{
+            transform-origin: left;
+            transform: translate(200px,-600px) rotate3d(0,1,0,-90deg);
+ background-color: blue;        }
+         #f6{
+             transform-origin: right;
+            transform: translate(-200px,-800px) rotate3d(0,1,0,90deg);
+             background-color: blue;
+        }
+        #f3{
+            
+            transform-origin: top;
+            background-color: blue;
+            transform: rotateX(90deg);
+        }
+       #f4{
+           
+        transform: translateY(-400px) translateZ(200px);
+            background-color: blue;
+        }
+       
