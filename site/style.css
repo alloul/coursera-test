@@ -1,34 +1,27 @@
 
-			header li{
-				list-style: none;
-			}
-			a:link, a:visited{
-				text-decoration: none;
-				background-color: yellow;
-				border: 1px solid blue;
-				color: black;
-				display: block;
-				text-align: center;
-				width: 200px;
-				margin-bottom: 1px;
-			}
-			a:hover{
-				background-color: red;
-				font-size: 22px;
-			}
-			a:active{
-				color: yellow;
-			}
-			header li:nth-child(3){
-				font-size: 26px;
-			}
-			section div:nth-child(odd){
-				background-color: gray;
-				width: 200px;
-			}
-			section div:nth-child(4):hover{
-				background-color: brown;
-				cursor: pointer;
-				font-size: 22px;
-				width: 200px;
-			}
+p{
+
+}
+
+.f{
+	background-color: yellow;
+	width: 200px;
+	height: 200px;
+	margin: auto;
+	 
+}
+#f5{
+	
+	transform: translateY(-600px) translateX(200px) rotateY(-70deg);
+	transform-origin: left;
+	background-color: red;
+
+	
+}
+#f6{
+	transform: translateY(-800px) translateX(-200px) rotateY(70deg);
+	transform-origin: right;
+	background-color: red;
+
+
+}
