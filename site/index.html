@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>my website</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<header>
+	<nav id="header-nav" class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<a href="index.html" class="pull-left visible-lg visible-md">
+					<div id="logo-img" alt="logo image"></div>
+				</a>
+				<div class="navbar-brand">
+					<a href="index.html"><h1>Anass Alloul</h1></a>
+					<p>
+						<img id="star-img" src="images/black_star.png" alt="start">
+						<span>Testing page</span>
+					<p>
+				</div>
+				<!-- dropdown list -->
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+        			<span class="sr-only">Toggle navigation</span>
+     		 	    <span class="icon-bar"></span>
+     		 	    <span class="icon-bar"></span>
+     		 	    <span class="icon-bar"></span>
+    		  </button>
+    		  <!--  END dropdown list -->
+			</div>
+
+				<!-- list menu -->
+				<div id="collapsable-nav" class="collapse navbar-collapse">
+      			<ul id="nav-list" class="nav navbar-nav navbar-right">
+      			<li>
+      				<a href="menu-categories.html">
+      				<span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
+      			</li>
+      			<li>
+      				<a href="#">
+      				<span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
+      			</li>
+      			<li>
+      				<a href="#">
+      				<span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Awards</a>
+      			</li>
+      			<li id="phone" class="hidden-xs">
+      				<a href="tel:+21258109786">
+      				<span>+212-58-10-97-86</span></a><div>* We Deliver</div>
+      			</li>
+      			</ul><!-- #nav-list -->
+      			</div><!-- .collapse .navbar-navbar-collapse --> <!-- END list menu -->
+		</div><!-- END container -->
+	</nav><!-- END HEADER nav -->
+</header>
+
+<div id="call-btn" class="visible-xs">
+	<a class="btn" href="tel:+21258109786">
+		<span class="glyphicon glyphicon-earphone"></span>
+		+212-58-10-97-86
+	</a>
+</div>
+<div id="xs-deliver" class="text-center visible-xs">* Testing Page</div>
+
+<div id="main-content" class="container">
+	<!-- image de restaurant -->	
+	<div class="jumbotron">
+		<img src="images/restaurant.jpg" alt="picture of restaurant" class="img-responsive visible-xs">
+	</div>
+	<!-- END image de restaurant -->
+
+	<!-- grand menu -->
+	<div id="home-titles" class="row">
+		<div class="col-md-4" class="col-sm-6" class="col-xs-12">
+			<a href="menu-categories.html"><div id="menu-tile"><span>menu</span></div></a>
+		</div>
+		<div class="col-md-4" class="col-sm-6" class="col-xs-12">
+			<a href="single-categories.html"><div id="specials-tile"><span>specials</span></div></a>
+		</div>
+		<div class="col-md-4" class="col-sm-12" class="col-xs-12">
+			<a href="https://www.google.com/maps/place/Omnium+G%C3%A9n%C3%A9ral+d'%C3%A9lectricit%C3%A9,+Nouasseur,+Maroc/@33.4028788,-7.5529128,16z/data=!4m5!3m4!1s0xda630966683b869:0xa4765e57c2977e31!8m2!3d33.4037127!4d-7.5487584?hl=fr" target="_blank">
+			<div id="map-tile">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6661.561886619375!2d-7.5529127524903386!3d33.402878775014095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda630966683b869%3A0xa4765e57c2977e31!2zT21uaXVtIEfDqW7DqXJhbCBkJ8OpbGVjdHJpY2l0w6ksIE5vdWFzc2V1ciwgTWFyb2M!5e0!3m2!1sfr!2s!4v1475240036566" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<span>map</span>
+			</div>
+			</a>
+		</div>
+	</div><!-- END of HOME tiles -->
+</div><!-- END of #Main-content -->
+
+<footer class="panel-footer"> <!-- footer de la page -->
+	<div class="container">
+		<div class="row">
+			<section id="hours" class="col-sm-4">
+				<span>Hours:</span><br>
+				Sun-Thurs: 11:15am - 10:00pm<br>
+				Fri: 11:15am - 2:30pm<br>
+				Saturday Closed
+				<hr class="visible-xs">
+			</section>
+			<section id="address" class="col-sm-4">
+				<span>Adress:</span><br>
+				Riad Essalam<br>
+				Mohammedia
+				<p>*Coursera is the best E-Learning</p>
+				<hr class="visible-xs">
+			</section>
+			<section id="testimonials" class="col-sm-4">
+				<p>The best website ever bla bla bla bla
+				bla bla bla bla</p>
+				<p>Amazing courses</p>
+				<hr class="visible-xs">
+			</section>
+		</div>
+		<div class="text-center">&copy; Copyright Alloul Anass 2016</div>
+	</div>
+</footer>
+
+
+
+
+<script src="js/jquery-1.12.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

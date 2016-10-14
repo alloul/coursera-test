@@ -1,0 +1,384 @@
+body{
+    font-size: 16px;
+    color: #fff;
+    background-color: #61122f;
+    font-family: 'Oxygen', sans-serif;
+}
+/* ---------------------HEADER------------------------------ */
+#header-nav{
+    background-color: #f6b319;
+    border-radius: 0;
+    border: 0;
+}
+
+#logo-img{ /* logo website */
+    background: url('images/lg.jpg');
+    width: 150px;
+    height: 150px;
+    margin: 10px 15px 10px 0;
+
+}
+.navbar-brand p img{ /* le petit logo star */
+    width: 25px;
+    height: 25px;
+}
+.navbar-brand h1{ /* nom restaurant */
+    font-family: 'Lora', serif;
+    color: #557c3e;
+    font-size: 1.5em;
+    text-decoration: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus{
+    text-decoration: none;
+}
+.navbar-brand p{ /* Testing page*/
+    color: #000;
+    text-transform: uppercase;
+    font-size: .8em;
+    margin-top: 15px;
+}
+.navbar-brand p span{ /* Testing page */
+    vertical-align: middle;
+}
+
+#nav-list{ /* affect tous la liste menu */
+    margin-top: 10px;
+}
+#nav-list a{ /* affect le lien de tous la liste menu */
+    color: #951C49;
+    text-align: center; /* le logo seront en milieu des nom de menu */
+}
+#nav-list a:hover{ /* quand en met la souris sur le liun backgroud devient blanc */
+    background: #E7E7E7;
+}
+#nav-list a span{ /* rendre les logo plus grand */
+    font-size: 1.8em;
+}
+
+#phone{ /* num phone */
+    margin-top: 5px;
+}
+#phone a{/* num phone */
+    text-align: right;
+    padding-bottom: 0;
+}
+#phone div{/* We Deliver */
+    color: #557c3e;
+    text-align: right;
+    padding-right: 15px;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{/* affect les bouton de la dropdown list */
+    border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle{
+    clear: both;
+    margin-top:-30px;
+}
+/* -----------------END HEADER------------------ */
+
+/* -----------------FOOTER------------------ */
+.panel-footer{ /* affect tous le footer */
+    margin-top: 30px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    background-color: #222;
+    border-top: 0;
+}
+.panel-footer div.row{
+    margin-top: 10px;
+}
+#hours, #address{
+    line-height: 2;
+}
+#hours > span, #address > span{
+    font-size: 1.3em;
+}
+#address p{
+    color: #557c3e;
+    font-size: .8em;
+    line-height: 1.8em;
+}
+#testimonials{
+    font-style: italic;
+}
+#testimonials p:nth-child(2){
+    margin-top: 25px;
+}
+/* -----------------END FOOTER------------------ */
+
+/* -----------------------HOME PAGE---------------------------- */
+.container .jumbotron{/* image de resto pour chaque device */
+    box-shadow: 0 0 50px #3F0C1F;
+    border: 2px solid #3F0C1F;
+}
+
+#menu-tile, #specials-tile, #map-tile{/* affect les tros gro menu */
+    height: 250px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid #3F0C1F;
+    overflow: hidden;
+}
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover{
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-tile{
+    background: url('images/tajin.jpg') no-repeat;
+    background-position: center;
+}
+#specials-tile{
+    background: url('images/dish.jpg') no-repeat;
+    background-position: center;
+}
+#menu-tile span, #specials-tile span, #map-tile span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em;
+    text-decoration: uppercase;
+    background-color: #000;
+    color: #fff;
+    opacity: .8;
+}
+
+/* -----------------------END HOME Page-----------------------*/
+
+
+/* -----------------------PAGE Menu-categories-----------------------*/
+.category-tile{ /* the div est comme un ancre doit etre relative pour ke 
+le span se posotione inside the div (span va etre absolut) */
+    position: relative;
+    border: 2px solid #3F0C1F;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 15px;
+}
+.category-tile span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    opacity: .8;
+}
+.category-tile:hover{
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+#menu-categories-title + div{
+    margin-bottom: 50px;
+}/* -----------------------FIN PAGE Menu-categories-----------------------*/
+
+
+
+/* -----------------------PAGE Single-Menu-categories-----------------------*/
+.menu-item-tile{
+    margin-bottom: 25px;
+}
+.menu-item-tile hr{
+    width: 80%;
+}
+.menu-item-tile .menu-item-price{
+    font-size: 1.1em;
+    text-align: right;
+    margin-top: -15px;
+    margin-right: -15px;
+}
+.menu-item-tile .menu-item-price span{
+    font-size: .6em;
+}
+.menu-item-photo{
+    position: relative;
+    border: 2px solid #3F0C1F;
+    overflow: hidden;
+    padding: 0;
+    margin-right: -15px;
+    margin-left: auto;
+    margin-bottom: 20px;
+    max-width: 250px;
+}
+.menu-item-photo div{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80px;
+    background-color: #557c3e;
+    text-align: center;
+}
+.menu-item-description{
+    padding-right: 0 0 10px;
+}
+h3.menu-item-title{
+    margin: 0 0 10px;
+}
+.menu-item-details{
+    font-size: .9em;
+    font-style: italic;
+}
+/* -----------------------FIN PAGE Single-Menu-categories-----------------------*/
+
+
+/* -----------------------MEDIA QUERIES -----------------------*/
+/* -------- large device only *********** */
+@media (min-width: 1200px){
+    /* ------HEADER ---------*/
+.container .jumbotron{
+    background: url('images/resto.jpg') no-repeat;
+    height: 675px;
+}
+
+}
+
+
+/* -------- medium device only *********** */
+@media (min-width: 992px) and (max-width: 1199px){
+/* ------HEADER ---------*/
+#logo-img{
+    background: url('images/logo_small.jpg');
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px 5px 0;
+}
+/* -------- END HEADER--------- */
+
+/* HOME PAGE */
+.container .jumbotron{
+    background: url('images/restaurant.jpg') no-repeat;
+    height: 558px;
+}
+
+}
+
+/* -------- small device only *********** */
+@media (min-width: 768px) and (max-width: 991px){
+.container .jumbotron{
+    background: url('images/restaurant.jpg') no-repeat;
+    height: 432px;
+}
+#menu-tile{ /* last add by anass */
+    float: left;
+}
+#menu-tile, #specials-tile{
+    width: 360px;
+    margin: 0 auto 15px;
+
+}
+
+}
+
+/* -------- extra small device only *********** */
+@media (max-width: 767px){
+/* HEADER */
+.navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+}
+.navbar-brand h1{/* restaurant nom */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width (depend sur la largeur
+                    )  instantané de l'ecran*/
+}
+.navbar-brand p{ /* affect Testing page */
+    font-size: .6em;
+    margin-top: 12px;
+}
+.navbar-brand p img{ /* affect le petit logo star */
+    height: 20px;
+    width: 20px;
+}
+#collapsable-nav a{ /* collaspsed nav menu glyph */ 
+    font-size: 1.2em;
+}
+#collapsable-nav a span{ /* les icon de dropdown list reste dans la meme
+                            taille parce que "#collapsable-nav a" a changé la taille des icon */
+    font-size: 1em;
+    margin-right: 5px; /* séparer les glyph et les nom de menu */
+}
+#call-btn > a{ /* centrer le num quand le device est petit */
+    font-size: 1.5em;
+    display: block;
+    margin: 0 20px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #f6b319;
+    color: #951c49;
+}
+#xs-deliver{
+    margin-top: 5px;
+    font-size: .7em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}/*FIN header*/
+
+.container .jumbotron{/* HOME PAGE */
+    margin-top: 30px;
+    padding: 0;
+}
+#menu-tile, #specials-tile{
+    width: 360px;
+    margin: 0 auto 15px;
+}/* FIN HOME PAGE */
+
+/* FOOTER */
+/* rendre le FOOTER centrer */
+.panel-footer section{
+    margin-bottom: 30px;
+    text-align: center;
+}
+.panel-footer section:nth-child(3){
+    margin-bottom: 0;
+}
+.panel-footer section hr{
+    width: 50%;
+}/* FIN FOOTER */
+
+/*Page Single-menu-categories*/
+.menu-item-photo{
+    margin-right: auto; /* parce que elle -15px au début si on l'a mets auto ca sera placer en milieu*/
+}
+.menu-item-tile .menu-item-price{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.menu-item-description{
+    text-align: center;
+}
+}
+
+
+/* -------- super extra small device only ******Bootstrap n'a pas des column inférieur à
+extra small donc on va créé notre propre column ***** */
+@media (max-width: 479px){
+    /* HEADER */
+    .navbar-brand h1{ /* restaurent name */
+        padding-top: 5px;
+        font-size: 10vw;
+    }
+    /* HOME page */
+    #menu-tile, #specials-tile{
+        width: 280px;
+        margin: 0 auto 15px;
+    }
+    .col-xxs-12{/* pour avoir un seul menu par ligne,Page menu-categories */
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        float: left;
+        width: 100%;
+    }
+}
+
